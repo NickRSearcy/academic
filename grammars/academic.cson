@@ -1,5 +1,5 @@
-'name': 'GitHub Markdown'
-'scopeName': 'source.gfm'
+'name': 'Academic (Markdown)'
+'scopeName': 'source.academic'
 'fileTypes': [
   'markdown'
   'md'
@@ -426,20 +426,86 @@
       '2':
         'name': 'comment.quote.gfm'
   }
+##############################################################################
+# Pandoc specific things
+##############################################################################
+
+
   {
-    'match': '(?<=^|\\s|"|\'|\\(|\\[)(@)(\\w+)(?=\\s|"|\'|\\.|,|\\)|\\])'
-    'captures':
-      '1':
-        'name': 'variable.mention.gfm'
-      '2':
-        'name': 'string.username.gfm'
+    "match": "(@)(\\w+)"
+    "captures":
+      "1":
+        "name": "variable.cite.pandoc"
+      "2":
+        "name": "string.identifier.pandoc"
+  }
+  # {
+  #   'begin': '^\\s*`{3,}\\s*json\\s*$'
+  #   'beginCaptures':
+  #     '0':
+  #       'name': 'support.gfm'
+  #   'end': '^\\s*`{3,}$'
+  #   'endCaptures':
+  #     '0':
+  #       'name': 'support.gfm'
+  #   'name': 'markup.code.json.gfm'
+  #   'contentName': 'source.json'
+  #   'patterns': [
+  #     {
+  #       'include': 'source.json'
+  #     }
+  #   ]
+  # }
+  {
+    'begin': '\\$'
+    'beginCaptures':
+      '0':
+        'name': 'punctuation.definition.string.begin.tex'
+    'end': '\\$'
+    'endCaptures':
+      '0':
+        'name': 'punctuation.definition.string.end.tex'
+    'name': 'string.other.math.tex'
+    "patterns": [
+      "include": "text.tex"
+    ]
   }
   {
-    'match': '(?<=^|\\s|"|\'|\\(|\\[)(#)(\\d+)(?=\\s|"|\'|\\.|,|\\)|\\])'
-    'captures':
-      '1':
-        'name': 'variable.issue.tag.gfm'
-      '2':
-        'name': 'string.issue.number.gfm'
+    'begin': '\\$\\$'
+    'beginCaptures':
+      '0':
+        'name': 'punctuation.definition.string.begin.tex'
+    'end': '\\$\\$'
+    'endCaptures':
+      '0':
+        'name': 'punctuation.definition.string.end.tex'
+    'name': 'string.other.math.block.tex'
+    "patterns": [
+      "include": "text.tex"
+    ]
   }
+  {
+    'begin': "(^\\s*)?(?=\\\\begin\\{(?:equation|align)(\\}))"
+    'end': "(^\\s*)?(\\\\end\\{(?:equation|align)(\\}))"
+    'name': 'string.other.math.block.tex'
+    "patterns": [
+      "include": "text.tex"
+    ]
+  }
+  # {
+  #   'match': '(?<=^|\\s|"|\'|\\(|\\[)(@)(\\w+)(?=\\s|"|\'|\\.|,|\\)|\\])'
+  #   'captures':
+  #     '1':
+  #       'name': 'variable.mention.gfm'
+  #     '2':
+  #       'name': 'string.username.gfm'
+  # }
+  # {
+  #   'match': '(?<=^|\\s|"|\'|\\(|\\[)(#)(\\d+)(?=\\s|"|\'|\\.|,|\\)|\\])'
+  #   'captures':
+  #     '1':
+  #       'name': 'variable.issue.tag.gfm'
+  #     '2':
+  #       'name': 'string.issue.number.gfm'
+  # }
 ]
