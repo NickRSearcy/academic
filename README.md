@@ -5,8 +5,8 @@ First go at atom package for pandoc use.
 Wishlist:
 
 -  Add grammar support for pandoc-flavor markdown
-    √ cites
-    √ latex
+    - √ cites
+    - √ latex
     -  yaml header
     -  other stuff?
 -  Generate autocomplete for cites from included `.bib` file (e.g. [LaTeXTools](https://github.com/SublimeText/LaTeXTools]) )
