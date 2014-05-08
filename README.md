@@ -1,6 +1,3 @@
+# academic
 
-=======
-academic
-========
-
-first go at atom package for pandoc use
+First go at atom package for pandoc use.
