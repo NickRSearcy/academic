@@ -1,8 +1,8 @@
 {
-  "name": "language-gfm",
-  "version": "0.34.0",
-  "description": "Syntax highlighting and snippets for GitHub Flavored Markdown (GFM).",
-  "repository": "https://github.com/atom/language-gfm",
+  "name": "academic",
+  "version": "0.0.0",
+  "description": "Utility for pandoc markdown, focused on academic use.",
+  "repository": "https://github.com/NickRSearcy/academic",
   "engines": {
     "atom": "*"
   },
