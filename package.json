@@ -1,6 +1,6 @@
 {
   "name": "academic",
-  "version": "0.1.0",
+  "version": "0.34.0",
   "description": "Utility for pandoc markdown, focused on academic use.",
   "repository": "https://github.com/NickRSearcy/academic",
   "engines": {
