@@ -9,7 +9,7 @@ Wishlist:
     - √ latex
     -  yaml header
     -  other stuff?
--  Generate autocomplete for cites from included `.bib` file (e.g. [LaTeXTools](https://github.com/SublimeText/LaTeXTools]) )
+-  Generate autocomplete for cites from included `.bib` file (e.g. [LaTeXTools](https://github.com/SublimeText/LaTeXTools) )
 -  handy snippets
 -  auto list continuation and things like that
 -  add more things to wish list
